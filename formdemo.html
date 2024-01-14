@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <!--<style type="text/css">
+        h1 {
+            border: 1px solid red;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        form {
+            border: 2px dashed blue;
+            width: auto;
+            background-color: blueviolet;
+        }
+
+        div {
+            background-color: chartreuse;
+            border: 1px dotted darkblue;
+        }
+
+        pre {
+            background-color: chocolate;
+        }
+    </style>-->
+    <style type="text/css">
+      form {
+            border: 1px dashed blue;
+            width: 400px;
+            background-color: blueviolet;
+        }  
+    </style>
+    <link href="../css/formstyle.css" type="text/css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+    <pre>
+        <form>
+        <div>
+        <h1><u>Registration Form</u></h1>
+        <div class="form-group">
+        <label for ="firstname" class="label">Firstname</label>
+        <input type="text" id="firstname" class="input"></div>
+        <div class="form-group">
+        <label for ="lastname"  class="label">Lastname</label>
+        <input type="text" id="lastname" class="input" >
+    </div>
+        <div class="form-group">
+        <label for ="email" class="label">Email</label>
+        <input type="email" id="email" class="input">
+    </div>
+        <div class="form-group">
+        <label for="password" class="label">Password</label>
+        <input type="password" id="password" class="input">
+    </div>
+        <div class="form-group">
+        <label for="phonenumber" class="label">Phonenumber</label>
+        <input type="text" id="phonenumber" class="input">
+    </div>
+        <div class="form-group">
+        <label for="age" class="label">Age</label>
+        <input type="number" id="age" max="10" min="0" class="input">
+    </div>
+        <div class="form-group">
+        <label for="gender" class="label">gender</label>
+        <input type="radio" id="gender"name="gender" class="input">Male
+        <input type="radio" id="gender"name="gender" class="input">Female
+        <input type="radio" id="gender"name="gender" class="input">others
+    </div>
+        <div class="form-group">
+        <label for="city" class="label">city</label>
+        <select id="city" class="input">
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+        </select></div>
+        <div class="form-group">
+        <label for="fav" class="label">Favourite Language</label>
+        <input type="checkbox" id="fav1"  class="input">java
+        <input type="checkbox" id="fav2"  class="input">phython
+        <input type="checkbox" id="fav3"  class="input">c++
+    </div>
+    <div class="form-group">    
+    <label for="dob" class="label">Dob</label>
+        <input type="date" id="dob" class="input">
+    </div>
+        <button>submit</button>   <button>cancel</button>
+
+    </form></div></pre>
+</body>
+
+</html>

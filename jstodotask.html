@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        Enter the Task
+        <input type="text" name="task" id="task">
+        <button onClick="addTask()">Add Task</button>
+        <ul id="listitem"></ul>
+    </pre>
+    <script>
+        function addTask() {
+            let taskElement = document.querySelector('#task');
+            console.log(task.value);
+            let listElement = document.createElement('li');
+            listElement.textContent = task;
+            let ulElement = document.querySelector('#listitem')
+            ulElement.appendChild(listElement)
+
+        }
+    </script>
+
+</body>
+
+</html>

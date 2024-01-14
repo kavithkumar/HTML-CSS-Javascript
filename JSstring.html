@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function initCap(name) {
+            return name.charAt(0).toUpperCase() + name.slice(1);
+        }
+        function getname() {
+            let fname = document.getElementById('myFirstName').value;
+            let lname = document.getElementById('myLastName').value;
+            fname = initCap(fname)
+            lname = initCap(lname)
+            document.getElementById('spanId').innerHTML = `<b>Welcome ${fname} ${lname} </b>`
+        }
+    </script>
+</head>
+
+<body>
+    First name:
+    <input type="text" id="myFirstName"><Br>
+    Last name:
+    <input type="text" id="myLastName"><Br>
+    <button onclick="getname()">Click</button><br>
+    <span id="spanId"></span>
+</body>
+
+</html>

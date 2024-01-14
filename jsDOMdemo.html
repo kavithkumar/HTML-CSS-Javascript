@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>This is heading</h1>
+    <p>This is the first paragraph</p>
+    <button onClick="changeColor()">Change color</button>
+    <script>
+        function changeColor() {
+            let pElement = document.querySelector('p');
+            document.body.style.backgroundColor = 'green'
+            pElement.style.color = 'orange'
+            // pElement.style.color='#333'   to use rgb colors just specify id number by using hash code form css or like google color sheets
+            pElement.textContent = 'This paragraph will get displayed in orange clor'
+
+        }
+    </script> -->
+
+
+    <img src="../Images/rg-visuals-GDEqDcWZXl8-unsplash.jpg" width="100px" height="100px" onmouseover="changeimage()"
+        onmouseout="restoreimage()" alt="rg-visuals-GDEqDcWZXl8-unsplash.jpg">
+
+    <script>
+        function changeimage() {
+            let imageElement = document.querySelector('img')
+            imageElement.src = '../Images/moritz-mentges-5MlBMYDsGBY-unsplas.jpg'
+            imageElement.alt = 'You have specified the wrong id'
+        }
+        function restoreimage() {
+            let imageElement = document.querySelector('img')
+            imageElement.src = '../Images/rg-visuals-GDEqDcWZXl8-unsplash.jpg'
+            imageElement.alt = 'rg-visuals-GDEqDcWZXl8-unsplash.jpg'
+
+        }
+    </script>
+</body>
+
+</html>

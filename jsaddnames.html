@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let names = [];
+        function pushNames() {
+            let name1 = document.getElementById("name").value;
+            names.push(name1);
+            console.log(names);
+            let display = 'the array of names are ';
+            names.forEach((a) => (display = display + a + "<br>"));
+            document.getElementById("val").innerHTML = display;
+        }
+
+
+
+
+        let numbers=[11,12,13,14,15,16,17,18,45];
+        console.log(numbers);
+        console.log(numbers.shift()) //to remove first element
+        console.log('after shift ')
+        console.log(numbers)
+        console.log(numbers.unshift(45,50)) //to add elements to the begining of an array
+        console.log(numbers) 
+    </script>
+</head>
+
+<body>
+    <input type="text" id="name" name="name"><br>
+    <button onClick="pushNames()">ADD NAME</button>
+    <span id="val"></span>
+</body>
+
+</html>

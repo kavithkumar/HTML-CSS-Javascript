@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getNumber(){
+            let n=document.getElementById('myNum').value
+            //document.write('You have entered '+ n)
+            document.getElementById('spanId').innerHTML=
+            //String literal or interpolation
+            //'<b>You have entered' + n+'</b>'
+            `<b>You have entered ${n}</b>`
+        }
+    </script>
+</head>
+<body>
+    Enter a number:
+    <input type="number" id="myNum" ><Br>
+        <button onclick="getNumber()">Click me!</button><Br>
+            <span id="spanId"></span>
+    
+</body>
+</html>

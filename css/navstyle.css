@@ -1,0 +1,31 @@
+.nav-bar {
+    padding: 3px;
+    color: red;
+    background-color: red;
+}
+
+.nav-list {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 2px;
+    margin: 0px 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+
+.nav-list li a:hover {
+    color: greenyellow;
+}
+
+.nav-list li a:visited {
+    color: darkgreen;
+}

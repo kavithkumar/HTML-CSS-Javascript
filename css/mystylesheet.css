@@ -1,0 +1,15 @@
+.myliststyle {
+    list-style-type: square;
+    padding: 10px;
+}
+
+.myliststyle li {
+    margin: 10px 20px;
+    color: aqua;
+}
+
+body {
+    margin: 20px;
+    background-color: blueviolet;
+    background-image: url(../Images/pexels-eberhard-grossgasteiger-1612351.jpg);
+}

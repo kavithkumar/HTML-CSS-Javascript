@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        <textarea rows="5" cols="60" id="feedback" onkeydown="countChars()"></textarea>
+        <b>Remaining characters <span id="count">100</span></b>
+    </pre>
+    <script>
+        function countChars() {
+            const maxChars = 100;
+            let textElement = document.querySelector('#feedback')
+            let enteredValue = textElement.value;
+            let remainingChars = maxChars - enteredValue.length;
+            let spanElement = document.querySelector('#count');
+            spanElement.textContent = remainingChars;
+            if (remainingChars < 10) {
+                spanElement.style.color = 'red'
+            }
+            else if (remainingChars > 10) {
+                spanElement.style.color = 'black'
+            }
+            if (remainingChars === 0) {
+                textElement.disabled = true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

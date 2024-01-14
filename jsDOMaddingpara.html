@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="divid">
+        <p>This is 1st paragraph</p>
+        <p>This is 2nd paragraph</p>
+        <p>This is 3rd paragraph</p>
+    </div>
+    <button onclick="addPara()">Click me to Add a new Paragraph</button>
+    <script>
+        function addPara() {
+            //1.create a new element of type <p>
+            //2.Add some textcontent to the paragraph
+            //3. Append p tag as a child of div tag
+            let pElement = document.createElement('p')
+            pElement.textContent = 'This is newly added Paragraph'
+
+            let divElement = document.querySelector('div')
+            divElement.appendChild(pElement)
+        }
+    </script>
+</body>
+
+</html>

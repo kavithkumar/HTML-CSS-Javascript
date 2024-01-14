@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function celsius() {
+        //     let inputTemp = document.getElementById("inputTemp").value
+        //     let result = (inputTemp - 32) * (5 / 9);
+        //     document.getElementById("result").innerHTML = `acquired celsius from given temperature ${inputTemp} is ${result}`
+        // }
+        // function fahrenheit() {
+        //     let inputTemp = document.getElementById("inputTemp").value
+        //     let result = (inputTemp * (9 / 5)) + 32;
+        //     document.getElementById("result").innerHTML = `acquired fahrenheit from given temperature ${inputTemp} is ${result}`
+        // }
+        // function conversion() {
+        //     if (document.getElementById('c').checked) {
+        //         fahrenheit()
+        //     } else {
+        //         celsius()
+        //     }
+        // }
+
+
+        function convert() {
+            if (document.getElementById("f").checked) {
+                inputTemp = document.getElementById('tempvalue').value
+                fahrenheit()
+            }
+            else {
+                inputTemp = document.getElementById('tempvalue').value
+                celsius()
+            }
+        }
+        function fahrenheit() {
+            document.getElementById('result').innerHTML = ((Number(inputTemp) - 32) * (5 / 9)).toLocaleString
+                (undefined, { style: "unit", unit: "fahrenheit" })
+        }
+        function celsius() {
+            document.getElementById('result').innerHTML = ((Number(inputTemp) * (9 / 5)) + 32).toLocaleString
+                (undefined, { style: "unit", unit: "celsius" })
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Temperature:
+    <input type="number" id="inputTemp"><br>
+    <button id="c" onClick="celsius()">Convert to celsius</button>
+    <button id="f" onClick="fahrenheit()">Convert to fahrenheit</button>
+    <b id="result"></b> -->
+
+    <input type="number" id="tempvalue" value="0"><br>
+    <input type="radio" id="f" name="temp">fahrenheit
+    <input type="radio" id="c" name="temp">celsius<br>
+    <button onClick="convert()">Convert</button><br>
+    <b id="result"></b>
+
+</body>
+
+</html>
